@@ -1,0 +1,51 @@
+{
+  "name": "drizzle",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@drizzle/react-components": "^1.5.3",
+    "@drizzle/react-plugin": "^1.5.3",
+    "@drizzle/store": "^1.5.3",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "@truffle/hdwallet-provider": "^1.0.43",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "3.4.3"
+  },
+  "devDependencies": {
+    "prettier": "^2.1.1",
+    "prettier-plugin-solidity": "^1.0.0-alpha.56",
+    "solhint": "^3.2.0",
+    "solhint-plugin-prettier": "^0.0.5",
+    "truffle": "^5.1.42"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "gas": "scripts/getGasPrice.sh",
+    "format": "prettier --write \"**/*.+(js|jsx|json|css|md|sol)\"",
+    "solhint": "solhint contracts/*.sol",
+    "console": "truffle console",
+    "console:testnet": "truffle console --network testnet",
+    "console:regtest": "truffle console --network regtest"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
